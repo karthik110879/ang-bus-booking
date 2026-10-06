@@ -1,0 +1,301 @@
+/* =========================================================================
+   Bus Booking Portal - Design Tokens
+   Custom properties only. No selectors other than :root and theme scopes.
+   ========================================================================= */
+
+:root {
+  /* ---------------------------------------------------------------------
+     Color - Ink (primary neutral, navy-tinted)
+     --------------------------------------------------------------------- */
+  --ink-950: #070b14;
+  --ink-900: #0c1322;
+  --ink-800: #131c30;
+  --ink-700: #1d2942;
+  --ink-600: #2b3a58;
+  --ink-500: #42537a;
+  --ink-400: #65769c;
+  --ink-300: #929fbd;
+  --ink-200: #c3cbdc;
+  --ink-100: #e2e6ef;
+  --ink-50:  #f2f4f8;
+
+  /* Color - Paper (warm surfaces) */
+  --paper-0:   #ffffff;
+  --paper-50:  #fbfaf7;
+  --paper-100: #f6f4ee;
+  --paper-200: #ece8de;
+  --paper-300: #ddd7c8;
+
+  /* Color - Amber (brand accent) */
+  --amber-900: #6b3d05;
+  --amber-800: #8a4f07;
+  --amber-700: #ad640a;
+  --amber-600: #d27c0e;
+  --amber-500: #f0961c;
+  --amber-400: #f6ad45;
+  --amber-300: #fac57a;
+  --amber-200: #fddcaf;
+  --amber-100: #feeed6;
+  --amber-50:  #fff8ec;
+
+  /* Color - Teal (secondary accent, routes / maps) */
+  --teal-700: #0f6b66;
+  --teal-600: #138580;
+  --teal-500: #19a39c;
+  --teal-300: #7fd3cd;
+  --teal-100: #d9f3f1;
+
+  /* Color - Semantic */
+  --green-700: #1c6e3f;
+  --green-600: #23874d;
+  --green-500: #2ea362;
+  --green-100: #dcf3e5;
+
+  --yellow-700: #8a6400;
+  --yellow-500: #e0a800;
+  --yellow-100: #fdf3d1;
+
+  --red-700: #a3242a;
+  --red-600: #c22d34;
+  --red-500: #dc3f46;
+  --red-100: #fbe1e2;
+
+  --blue-700: #1f4fa8;
+  --blue-600: #2862cc;
+  --blue-500: #3a78e6;
+  --blue-100: #dfeafc;
+
+  /* ---------------------------------------------------------------------
+     Color - Roles (use these in components)
+     --------------------------------------------------------------------- */
+  --color-brand: var(--amber-500);
+  --color-brand-hover: var(--amber-600);
+  --color-brand-active: var(--amber-700);
+  --color-brand-soft: var(--amber-100);
+  --color-brand-contrast: var(--ink-950);
+
+  --color-accent: var(--teal-500);
+  --color-accent-soft: var(--teal-100);
+
+  --color-bg: var(--paper-100);
+  --color-bg-subtle: var(--paper-50);
+  --color-bg-inverse: var(--ink-900);
+
+  --color-surface: var(--paper-0);
+  --color-surface-raised: var(--paper-0);
+  --color-surface-sunken: var(--paper-100);
+  --color-surface-inverse: var(--ink-800);
+
+  --color-text: var(--ink-900);
+  --color-text-muted: var(--ink-500);
+  --color-text-subtle: var(--ink-400);
+  --color-text-disabled: var(--ink-300);
+  --color-text-inverse: var(--paper-50);
+  --color-text-inverse-muted: var(--ink-300);
+  --color-text-link: var(--amber-700);
+  --color-text-link-hover: var(--amber-800);
+
+  --color-border: var(--paper-300);
+  --color-border-subtle: var(--paper-200);
+  --color-border-strong: var(--ink-300);
+  --color-border-inverse: rgba(255, 255, 255, 0.12);
+  --color-border-focus: var(--amber-500);
+
+  --color-success: var(--green-600);
+  --color-success-soft: var(--green-100);
+  --color-success-text: var(--green-700);
+  --color-warning: var(--yellow-500);
+  --color-warning-soft: var(--yellow-100);
+  --color-warning-text: var(--yellow-700);
+  --color-danger: var(--red-600);
+  --color-danger-soft: var(--red-100);
+  --color-danger-text: var(--red-700);
+  --color-info: var(--blue-600);
+  --color-info-soft: var(--blue-100);
+  --color-info-text: var(--blue-700);
+
+  /* Booking / seat states */
+  --color-seat-available: var(--paper-0);
+  --color-seat-selected: var(--amber-500);
+  --color-seat-booked: var(--ink-200);
+  --color-seat-ladies: #f3c4d6;
+  --color-seat-blocked: var(--red-100);
+
+  /* Schedule statuses */
+  --color-status-scheduled: var(--blue-600);
+  --color-status-boarding: var(--amber-600);
+  --color-status-departed: var(--teal-600);
+  --color-status-completed: var(--green-600);
+  --color-status-cancelled: var(--red-600);
+
+  --color-overlay: rgba(7, 11, 20, 0.55);
+  --color-scrim: rgba(7, 11, 20, 0.08);
+
+  /* ---------------------------------------------------------------------
+     Typography
+     --------------------------------------------------------------------- */
+  --font-sans: "Outfit", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "Cascadia Code", Consolas, monospace;
+
+  --text-2xs: 0.6875rem;  /* 11px */
+  --text-xs:  0.75rem;    /* 12px */
+  --text-sm:  0.875rem;   /* 14px */
+  --text-md:  1rem;       /* 16px */
+  --text-lg:  1.125rem;   /* 18px */
+  --text-xl:  1.25rem;    /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+  --text-6xl: 3.75rem;    /* 60px */
+
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --leading-none: 1;
+  --leading-tight: 1.15;
+  --leading-snug: 1.3;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  --tracking-tight: -0.02em;
+  --tracking-snug: -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-caps: 0.12em;
+
+  /* ---------------------------------------------------------------------
+     Spacing (4px base)
+     --------------------------------------------------------------------- */
+  --space-0: 0;
+  --space-px: 1px;
+  --space-0-5: 0.125rem; /* 2 */
+  --space-1: 0.25rem;    /* 4 */
+  --space-1-5: 0.375rem; /* 6 */
+  --space-2: 0.5rem;     /* 8 */
+  --space-3: 0.75rem;    /* 12 */
+  --space-4: 1rem;       /* 16 */
+  --space-5: 1.25rem;    /* 20 */
+  --space-6: 1.5rem;     /* 24 */
+  --space-7: 1.75rem;    /* 28 */
+  --space-8: 2rem;       /* 32 */
+  --space-10: 2.5rem;    /* 40 */
+  --space-12: 3rem;      /* 48 */
+  --space-14: 3.5rem;    /* 56 */
+  --space-16: 4rem;      /* 64 */
+  --space-20: 5rem;      /* 80 */
+  --space-24: 6rem;      /* 96 */
+
+  /* ---------------------------------------------------------------------
+     Radius
+     --------------------------------------------------------------------- */
+  --radius-none: 0;
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+  --radius-full: 9999px;
+
+  /* ---------------------------------------------------------------------
+     Border widths
+     --------------------------------------------------------------------- */
+  --border-thin: 1px;
+  --border-medium: 1.5px;
+  --border-thick: 2px;
+
+  /* ---------------------------------------------------------------------
+     Elevation
+     --------------------------------------------------------------------- */
+  --shadow-xs: 0 1px 2px rgba(12, 19, 34, 0.06);
+  --shadow-sm: 0 1px 3px rgba(12, 19, 34, 0.08), 0 1px 2px rgba(12, 19, 34, 0.04);
+  --shadow-md: 0 6px 16px -4px rgba(12, 19, 34, 0.1), 0 2px 4px rgba(12, 19, 34, 0.05);
+  --shadow-lg: 0 18px 40px -12px rgba(12, 19, 34, 0.18), 0 4px 10px rgba(12, 19, 34, 0.05);
+  --shadow-xl: 0 32px 64px -20px rgba(12, 19, 34, 0.28);
+  --shadow-inset: inset 0 1px 2px rgba(12, 19, 34, 0.06);
+  --shadow-focus: 0 0 0 3px rgba(240, 150, 28, 0.32);
+  --shadow-focus-danger: 0 0 0 3px rgba(220, 63, 70, 0.28);
+
+  /* ---------------------------------------------------------------------
+     Motion
+     --------------------------------------------------------------------- */
+  --duration-instant: 80ms;
+  --duration-fast: 140ms;
+  --duration-base: 220ms;
+  --duration-slow: 360ms;
+  --duration-slower: 600ms;
+
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* ---------------------------------------------------------------------
+     Z-index
+     --------------------------------------------------------------------- */
+  --z-base: 0;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-header: 300;
+  --z-sidenav: 310;
+  --z-overlay: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-toast: 700;
+  --z-tooltip: 800;
+
+  /* ---------------------------------------------------------------------
+     Layout
+     --------------------------------------------------------------------- */
+  --layout-header-height: 64px;
+  --layout-footer-height: 48px;
+  --layout-sidenav-width: 264px;
+  --layout-sidenav-collapsed: 76px;
+  --layout-content-max: 1360px;
+  --layout-form-max: 420px;
+  --layout-gutter: var(--space-6);
+
+  --control-height-sm: 32px;
+  --control-height-md: 40px;
+  --control-height-lg: 48px;
+  --control-padding-x: var(--space-4);
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 900px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1440px;
+}
+
+/* Dark surface scope: apply to any container rendered on ink backgrounds */
+.theme-dark,
+[data-theme="dark"] {
+  --color-bg: var(--ink-950);
+  --color-bg-subtle: var(--ink-900);
+  --color-surface: var(--ink-900);
+  --color-surface-raised: var(--ink-800);
+  --color-surface-sunken: var(--ink-950);
+  --color-text: var(--paper-50);
+  --color-text-muted: var(--ink-300);
+  --color-text-subtle: var(--ink-400);
+  --color-border: var(--ink-700);
+  --color-border-subtle: var(--ink-800);
+  --color-border-strong: var(--ink-500);
+  --color-text-link: var(--amber-400);
+  --color-text-link-hover: var(--amber-300);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-instant: 0ms;
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+    --duration-slower: 0ms;
+  }
+}

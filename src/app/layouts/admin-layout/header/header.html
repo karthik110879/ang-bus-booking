@@ -1,0 +1,58 @@
+<header class="topbar">
+  <div class="topbar-start">
+    <button class="icon-btn icon-btn-outline" type="button" aria-label="Toggle sidebar" aria-expanded="true" aria-controls="app-sidenav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <path d="M4 6h16M4 12h10M4 18h16" />
+      </svg>
+    </button>
+
+    <div class="topbar-title">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <span>Overview</span>
+        <span class="crumbs-sep" aria-hidden="true">/</span>
+        <span aria-current="page">Dashboard</span>
+      </nav>
+      <h1 class="topbar-heading">Dashboard</h1>
+    </div>
+  </div>
+
+  <form class="topbar-search" role="search">
+    <svg class="topbar-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-3.5-3.5" />
+    </svg>
+    <label class="visually-hidden" for="global-search">Search</label>
+    <input class="form-control" id="global-search" type="search" placeholder="Search bookings, PNR, routes..." />
+    <kbd class="topbar-kbd">Ctrl K</kbd>
+  </form>
+
+  <div class="topbar-end">
+    <button class="btn btn-primary d-none d-xl-inline-flex" type="button">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M12 5v14M5 12h14" />
+      </svg>
+      New schedule
+    </button>
+
+    <button class="icon-btn" type="button" aria-label="Notifications, 3 unread">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+        <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+      </svg>
+      <span class="icon-btn-dot">3</span>
+    </button>
+
+    <span class="topbar-divider" aria-hidden="true"></span>
+
+    <button class="user-chip" type="button" aria-label="Account menu">
+      <span class="avatar">KA</span>
+      <span class="user-chip-text d-none d-md-flex">
+        <strong>Karthik A.</strong>
+        <small>Administrator</small>
+      </span>
+      <svg class="d-none d-md-block" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="m6 9 6 6 6-6" />
+      </svg>
+    </button>
+  </div>
+</header>

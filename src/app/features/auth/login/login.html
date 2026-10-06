@@ -1,0 +1,127 @@
+<main class="container-fluid p-0">
+  <div class="row g-0 min-vh-100">
+    <section
+      class="brand theme-dark col-lg-6 d-flex flex-column justify-content-between gap-5 p-4 p-md-5 text-body"
+      aria-label="Bus Booking Administration"
+    >
+      <div class="routes" aria-hidden="true">
+        <span class="route route-a"></span>
+        <span class="route route-b"></span>
+        <span class="route route-c"></span>
+      </div>
+
+      <header class="brand-layer d-flex align-items-center gap-3">
+        <span class="wordmark-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="3" width="16" height="15" rx="3" />
+            <path d="M4 11h16" />
+            <path d="M7 21v-3M17 21v-3" />
+            <circle cx="8" cy="14.5" r="0.6" fill="currentColor" />
+            <circle cx="16" cy="14.5" r="0.6" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="fs-5 fw-semibold">Transitly</span>
+      </header>
+
+      <div class="brand-layer brand-body">
+        <p class="eyebrow text-brand mb-3">Bus Booking Administration</p>
+        <h1 class="brand-title font-display">
+          Every route, seat and departure, <em>in one place.</em>
+        </h1>
+        <p class="fs-5 text-body-secondary mt-4 mb-0 lh-lg">
+          The operator console for managing vendors, terminals, schedules and passenger bookings across your network.
+        </p>
+
+        <ul class="brand-list list-unstyled mt-5 mb-0 d-none d-lg-grid">
+          <li class="d-flex gap-3">
+            <span class="brand-dot"></span>
+            <div class="small">
+              <strong class="d-block">Vendors</strong>
+              <span class="text-body-tertiary">Onboard and manage bus operators</span>
+            </div>
+          </li>
+          <li class="d-flex gap-3">
+            <span class="brand-dot"></span>
+            <div class="small">
+              <strong class="d-block">Locations</strong>
+              <span class="text-body-tertiary">Terminals, hubs and station addresses</span>
+            </div>
+          </li>
+          <li class="d-flex gap-3">
+            <span class="brand-dot"></span>
+            <div class="small">
+              <strong class="d-block">Schedules</strong>
+              <span class="text-body-tertiary">Plan dispatches and track departures</span>
+            </div>
+          </li>
+          <li class="d-flex gap-3">
+            <span class="brand-dot"></span>
+            <div class="small">
+              <strong class="d-block">Bookings</strong>
+              <span class="text-body-tertiary">Seat allocation and ticket records</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <footer class="brand-layer d-none d-lg-flex align-items-center gap-3 small text-body-tertiary">
+        <span>&copy; 2026 Transitly</span>
+        <span class="brand-sep" aria-hidden="true"></span>
+        <span>Operator access only</span>
+      </footer>
+    </section>
+
+    <section class="col-lg-6 bg-paper d-flex align-items-center justify-content-center px-4 py-5">
+      <div class="panel w-100">
+        <h2 class="h3 mb-2">Sign in</h2>
+        <p class="text-body-secondary mb-4">Welcome back. Enter your credentials to continue.</p>
+
+        <form autocomplete="on" novalidate>
+          <div class="mb-3">
+            <label class="form-label" for="login-email">Email address</label>
+            <input
+              class="form-control form-control-lg"
+              id="login-email"
+              name="email"
+              type="email"
+              placeholder="you@company.com"
+              autocomplete="username"
+            />
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-baseline">
+              <label class="form-label" for="login-password">Password</label>
+              <a class="small fw-medium" href="#">Forgot password?</a>
+            </div>
+            <input
+              class="form-control form-control-lg"
+              id="login-password"
+              name="password"
+              type="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+            />
+          </div>
+
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" id="login-remember" name="remember" />
+            <label class="form-check-label" for="login-remember">Keep me signed in</label>
+          </div>
+
+          <button class="btn btn-primary btn-lg w-100" type="button">
+            Sign in
+            <svg class="btn-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 10h12M11 5l5 5-5 5" />
+            </svg>
+          </button>
+        </form>
+
+        <p class="small text-body-secondary text-center border-top mt-4 pt-4 mb-0">
+          New to the portal?
+          <a class="fw-semibold" href="/auth/register">Request an account</a>
+        </p>
+      </div>
+    </section>
+  </div>
+</main>

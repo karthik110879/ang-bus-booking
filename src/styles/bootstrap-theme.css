@@ -1,0 +1,318 @@
+/* =========================================================================
+   Bootstrap 5 theme bridge
+   Maps Bootstrap's runtime CSS variables onto the design tokens so stock
+   Bootstrap / ngx-bootstrap markup picks up the portal look.
+   Must load after bootstrap.min.css (see angular.json "styles").
+   ========================================================================= */
+
+:root,
+[data-bs-theme="light"] {
+  --bs-font-sans-serif: var(--font-sans);
+  --bs-font-monospace: var(--font-mono);
+  --bs-body-font-family: var(--font-sans);
+  --bs-body-font-size: var(--text-md);
+  --bs-body-font-weight: var(--weight-regular);
+  --bs-body-line-height: var(--leading-normal);
+  --bs-body-color: var(--color-text);
+  --bs-body-color-rgb: 12, 19, 34;
+  --bs-body-bg: var(--color-bg);
+  --bs-body-bg-rgb: 246, 244, 238;
+
+  --bs-emphasis-color: var(--ink-950);
+  --bs-secondary-color: var(--color-text-muted);
+  --bs-tertiary-color: var(--color-text-subtle);
+  --bs-secondary-bg: var(--paper-200);
+  --bs-tertiary-bg: var(--paper-50);
+
+  --bs-primary: var(--amber-500);
+  --bs-primary-rgb: 240, 150, 28;
+  --bs-primary-text-emphasis: var(--amber-800);
+  --bs-primary-bg-subtle: var(--amber-100);
+  --bs-primary-border-subtle: var(--amber-200);
+
+  --bs-secondary: var(--ink-600);
+  --bs-secondary-rgb: 43, 58, 88;
+
+  --bs-success: var(--green-600);
+  --bs-success-rgb: 35, 135, 77;
+  --bs-success-text-emphasis: var(--green-700);
+  --bs-success-bg-subtle: var(--green-100);
+
+  --bs-info: var(--blue-600);
+  --bs-info-rgb: 40, 98, 204;
+  --bs-info-text-emphasis: var(--blue-700);
+  --bs-info-bg-subtle: var(--blue-100);
+
+  --bs-warning: var(--yellow-500);
+  --bs-warning-rgb: 224, 168, 0;
+  --bs-warning-text-emphasis: var(--yellow-700);
+  --bs-warning-bg-subtle: var(--yellow-100);
+
+  --bs-danger: var(--red-600);
+  --bs-danger-rgb: 194, 45, 52;
+  --bs-danger-text-emphasis: var(--red-700);
+  --bs-danger-bg-subtle: var(--red-100);
+
+  --bs-dark: var(--ink-900);
+  --bs-dark-rgb: 12, 19, 34;
+  --bs-light: var(--paper-50);
+  --bs-light-rgb: 251, 250, 247;
+
+  --bs-link-color: var(--color-text-link);
+  --bs-link-color-rgb: 173, 100, 10;
+  --bs-link-hover-color: var(--color-text-link-hover);
+  --bs-link-hover-color-rgb: 138, 79, 7;
+  --bs-border-color: var(--color-border);
+  --bs-border-color-translucent: rgba(12, 19, 34, 0.1);
+  --bs-border-radius-sm: var(--radius-sm);
+  --bs-border-radius: var(--radius-md);
+  --bs-border-radius-lg: var(--radius-lg);
+  --bs-border-radius-xl: var(--radius-xl);
+  --bs-border-radius-xxl: var(--radius-2xl);
+  --bs-border-radius-pill: var(--radius-full);
+
+  --bs-box-shadow-sm: var(--shadow-sm);
+  --bs-box-shadow: var(--shadow-md);
+  --bs-box-shadow-lg: var(--shadow-lg);
+  --bs-box-shadow-inset: var(--shadow-inset);
+
+  --bs-focus-ring-width: 3px;
+  --bs-focus-ring-opacity: 0.32;
+  --bs-focus-ring-color: rgba(240, 150, 28, 0.32);
+
+  --bs-form-valid-color: var(--color-success);
+  --bs-form-valid-border-color: var(--color-success);
+  --bs-form-invalid-color: var(--color-danger);
+  --bs-form-invalid-border-color: var(--color-danger);
+}
+
+/* Buttons --------------------------------------------------------------- */
+.btn {
+  --bs-btn-font-family: var(--font-sans);
+  --bs-btn-font-weight: var(--weight-semibold);
+  --bs-btn-font-size: var(--text-sm);
+  --bs-btn-padding-x: var(--control-padding-x);
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-border-radius: var(--radius-md);
+  --bs-btn-focus-box-shadow: var(--shadow-focus);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard),
+    transform var(--duration-instant) var(--ease-standard);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-lg {
+  --bs-btn-padding-y: 0.75rem;
+  --bs-btn-padding-x: var(--space-6);
+  --bs-btn-font-size: var(--text-md);
+  --bs-btn-border-radius: var(--radius-md);
+}
+
+.btn-sm {
+  --bs-btn-padding-y: 0.3rem;
+  --bs-btn-padding-x: var(--space-3);
+  --bs-btn-font-size: var(--text-xs);
+  --bs-btn-border-radius: var(--radius-sm);
+}
+
+.btn-primary {
+  --bs-btn-color: var(--color-brand-contrast);
+  --bs-btn-bg: var(--color-brand);
+  --bs-btn-border-color: var(--color-brand);
+  --bs-btn-hover-color: var(--color-brand-contrast);
+  --bs-btn-hover-bg: var(--color-brand-hover);
+  --bs-btn-hover-border-color: var(--color-brand-hover);
+  --bs-btn-active-color: var(--color-brand-contrast);
+  --bs-btn-active-bg: var(--color-brand-active);
+  --bs-btn-active-border-color: var(--color-brand-active);
+  --bs-btn-disabled-color: var(--color-brand-contrast);
+  --bs-btn-disabled-bg: var(--color-brand);
+  --bs-btn-disabled-border-color: var(--color-brand);
+  box-shadow: var(--shadow-xs);
+}
+
+.btn-dark {
+  --bs-btn-bg: var(--ink-900);
+  --bs-btn-border-color: var(--ink-900);
+  --bs-btn-hover-bg: var(--ink-800);
+  --bs-btn-hover-border-color: var(--ink-800);
+  --bs-btn-active-bg: var(--ink-950);
+  --bs-btn-active-border-color: var(--ink-950);
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: var(--color-text);
+  --bs-btn-border-color: var(--color-border);
+  --bs-btn-hover-color: var(--color-text);
+  --bs-btn-hover-bg: var(--color-surface);
+  --bs-btn-hover-border-color: var(--color-border-strong);
+  --bs-btn-active-color: var(--color-text);
+  --bs-btn-active-bg: var(--paper-200);
+  --bs-btn-active-border-color: var(--color-border-strong);
+}
+
+.btn-link {
+  --bs-btn-color: var(--color-text-link);
+  --bs-btn-hover-color: var(--color-text-link-hover);
+  --bs-btn-active-color: var(--color-text-link-hover);
+  text-decoration: none;
+}
+
+/* Forms ----------------------------------------------------------------- */
+.form-label {
+  margin-bottom: var(--space-1-5);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-text);
+}
+
+.form-control,
+.form-select {
+  border-color: var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: var(--shadow-inset);
+  transition:
+    border-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
+}
+
+.form-control-lg,
+.form-select-lg {
+  min-height: var(--control-height-lg);
+  padding: 0.625rem var(--space-4);
+  font-size: var(--text-md);
+  border-radius: var(--radius-md);
+}
+
+.form-control::placeholder {
+  color: var(--color-text-subtle);
+}
+
+.form-control:hover,
+.form-select:hover {
+  border-color: var(--color-border-strong);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-border-focus);
+  box-shadow: var(--shadow-focus);
+}
+
+.form-control:disabled {
+  background-color: var(--color-surface-sunken);
+  color: var(--color-text-disabled);
+}
+
+.form-text {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.form-check-input {
+  border-color: var(--color-border-strong);
+}
+
+.form-check-input:checked {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+}
+
+.form-check-input:focus {
+  border-color: var(--color-border-focus);
+  box-shadow: var(--shadow-focus);
+}
+
+.form-check-label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.input-group-text {
+  background-color: var(--color-surface-sunken);
+  border-color: var(--color-border);
+  color: var(--color-text-muted);
+}
+
+/* Surfaces -------------------------------------------------------------- */
+.card {
+  --bs-card-border-color: var(--color-border-subtle);
+  --bs-card-border-radius: var(--radius-lg);
+  --bs-card-inner-border-radius: calc(var(--radius-lg) - 1px);
+  --bs-card-bg: var(--color-surface);
+  --bs-card-cap-bg: var(--color-bg-subtle);
+  box-shadow: var(--shadow-sm);
+}
+
+.badge {
+  --bs-badge-font-weight: var(--weight-semibold);
+  --bs-badge-border-radius: var(--radius-full);
+  letter-spacing: var(--tracking-wide);
+}
+
+.alert {
+  --bs-alert-border-radius: var(--radius-md);
+}
+
+.dropdown-menu {
+  --bs-dropdown-border-color: var(--color-border-subtle);
+  --bs-dropdown-border-radius: var(--radius-md);
+  --bs-dropdown-box-shadow: var(--shadow-lg);
+  --bs-dropdown-link-active-bg: var(--color-brand);
+  --bs-dropdown-link-active-color: var(--color-brand-contrast);
+  box-shadow: var(--shadow-lg);
+}
+
+.modal {
+  --bs-modal-border-radius: var(--radius-lg);
+  --bs-modal-border-color: var(--color-border-subtle);
+  --bs-modal-box-shadow: var(--shadow-xl);
+}
+
+.table {
+  --bs-table-border-color: var(--color-border-subtle);
+  --bs-table-striped-bg: var(--paper-50);
+  --bs-table-hover-bg: var(--amber-50);
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-bg: var(--color-brand);
+  --bs-nav-pills-link-active-color: var(--color-brand-contrast);
+}
+
+.pagination {
+  --bs-pagination-active-bg: var(--color-brand);
+  --bs-pagination-active-border-color: var(--color-brand);
+  --bs-pagination-active-color: var(--color-brand-contrast);
+  --bs-pagination-focus-box-shadow: var(--shadow-focus);
+}
+
+.tooltip {
+  --bs-tooltip-bg: var(--ink-900);
+  --bs-tooltip-border-radius: var(--radius-sm);
+  --bs-tooltip-font-size: var(--text-xs);
+}
+
+/* Dark scope ------------------------------------------------------------ */
+.theme-dark,
+[data-theme="dark"] {
+  --bs-body-color: var(--paper-50);
+  --bs-body-color-rgb: 251, 250, 247;
+  --bs-emphasis-color: var(--paper-0);
+  --bs-secondary-color: var(--ink-300);
+  --bs-tertiary-color: var(--ink-400);
+  --bs-border-color: var(--ink-700);
+  --bs-link-color: var(--amber-400);
+  --bs-link-hover-color: var(--amber-300);
+}

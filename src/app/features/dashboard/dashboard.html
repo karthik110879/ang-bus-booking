@@ -1,0 +1,394 @@
+<div class="dash">
+  <!-- Page header -->
+  <section class="dash-head">
+    <div>
+      <p class="eyebrow mb-1">Tuesday, 6 October 2026</p>
+      <h2 class="dash-title">Good afternoon, Admin</h2>
+      <p class="text-body-secondary mb-0">Here is what is happening across your bus network today.</p>
+    </div>
+    <div class="dash-head-actions">
+      <span class="range-pill">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="17" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" />
+        </svg>
+        30 Sep - 6 Oct 2026
+      </span>
+      <button class="btn btn-outline-secondary" type="button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+        </svg>
+        Export
+      </button>
+      <button class="btn btn-primary" type="button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M12 5v14M5 12h14" />
+        </svg>
+        Add booking
+      </button>
+    </div>
+  </section>
+
+  <!-- KPI cards -->
+  <section class="dash-stats" aria-label="Key metrics">
+    <article class="stat-card">
+      <div class="stat-card-top">
+        <span class="stat-card-label">Total bookings</span>
+        <span class="stat-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9a2 2 0 0 0 0 6v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3a2 2 0 0 0 0-6V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z" /><path d="M13 5v2M13 11v2M13 17v2" />
+          </svg>
+        </span>
+      </div>
+      <span class="stat-card-value">1,284</span>
+      <div class="stat-card-meta"><span class="trend trend-up">+12.4%</span> vs last week</div>
+    </article>
+
+    <article class="stat-card">
+      <div class="stat-card-top">
+        <span class="stat-card-label">Revenue</span>
+        <span class="stat-card-icon is-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 3h12M6 8h12M6 13l8.5 8M6 13h3a5 5 0 0 0 0-10" />
+          </svg>
+        </span>
+      </div>
+      <span class="stat-card-value">&#8377;8.42L</span>
+      <div class="stat-card-meta"><span class="trend trend-up">+8.1%</span> vs last week</div>
+    </article>
+
+    <article class="stat-card">
+      <div class="stat-card-top">
+        <span class="stat-card-label">Active schedules</span>
+        <span class="stat-card-icon is-blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="17" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" />
+          </svg>
+        </span>
+      </div>
+      <span class="stat-card-value">86</span>
+      <div class="stat-card-meta"><span class="trend trend-up">+4</span> added this week</div>
+    </article>
+
+    <article class="stat-card">
+      <div class="stat-card-top">
+        <span class="stat-card-label">Seat occupancy</span>
+        <span class="stat-card-icon is-teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 13V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v7" /><path d="M5 13h14v4H5z" /><path d="M7 17v3M17 17v3" />
+          </svg>
+        </span>
+      </div>
+      <span class="stat-card-value">78%</span>
+      <div class="stat-card-meta"><span class="trend trend-down">-2.3%</span> vs last week</div>
+    </article>
+
+    <article class="stat-card">
+      <div class="stat-card-top">
+        <span class="stat-card-label">Bus vendors</span>
+        <span class="stat-card-icon is-ink">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21h18M5 21V7l7-4 7 4v14" /><path d="M9 21v-6h6v6" />
+          </svg>
+        </span>
+      </div>
+      <span class="stat-card-value">18</span>
+      <div class="stat-card-meta"><span class="trend trend-up">+2</span> onboarded</div>
+    </article>
+
+    <article class="stat-card">
+      <div class="stat-card-top">
+        <span class="stat-card-label">Locations</span>
+        <span class="stat-card-icon is-red">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" /><circle cx="12" cy="10" r="3" />
+          </svg>
+        </span>
+      </div>
+      <span class="stat-card-value">42</span>
+      <div class="stat-card-meta">across 11 states</div>
+    </article>
+  </section>
+
+  <!-- Trend + occupancy -->
+  <section class="dash-row dash-row-wide">
+    <article class="panel-card">
+      <header class="panel-card-head">
+        <div>
+          <h3 class="panel-card-title">Bookings this week</h3>
+          <p class="panel-card-sub">Tickets sold per day across all vendors</p>
+        </div>
+        <div class="legend">
+          <span><i class="legend-dot is-amber"></i>Bookings</span>
+          <span><i class="legend-dot is-ink"></i>Cancellations</span>
+        </div>
+      </header>
+      <div class="panel-card-body">
+        <div class="bars" role="img" aria-label="Bookings per day: Wed 142, Thu 168, Fri 214, Sat 248, Sun 231, Mon 129, Tue 152">
+          <div class="bars-col"><div class="bars-stack"><span class="bar" style="--h: 57%"></span><span class="bar is-ink" style="--h: 8%"></span></div><small>Wed</small></div>
+          <div class="bars-col"><div class="bars-stack"><span class="bar" style="--h: 68%"></span><span class="bar is-ink" style="--h: 10%"></span></div><small>Thu</small></div>
+          <div class="bars-col"><div class="bars-stack"><span class="bar" style="--h: 86%"></span><span class="bar is-ink" style="--h: 12%"></span></div><small>Fri</small></div>
+          <div class="bars-col"><div class="bars-stack"><span class="bar is-peak" style="--h: 100%"></span><span class="bar is-ink" style="--h: 14%"></span></div><small>Sat</small></div>
+          <div class="bars-col"><div class="bars-stack"><span class="bar" style="--h: 93%"></span><span class="bar is-ink" style="--h: 9%"></span></div><small>Sun</small></div>
+          <div class="bars-col"><div class="bars-stack"><span class="bar" style="--h: 52%"></span><span class="bar is-ink" style="--h: 6%"></span></div><small>Mon</small></div>
+          <div class="bars-col"><div class="bars-stack"><span class="bar" style="--h: 61%"></span><span class="bar is-ink" style="--h: 7%"></span></div><small>Tue</small></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="panel-card">
+      <header class="panel-card-head">
+        <div>
+          <h3 class="panel-card-title">Seat occupancy</h3>
+          <p class="panel-card-sub">Today, 86 departures</p>
+        </div>
+      </header>
+      <div class="panel-card-body donut-wrap">
+        <div class="donut" role="img" aria-label="78 percent booked, 18 percent available, 4 percent blocked">
+          <div class="donut-center">
+            <strong>78%</strong>
+            <small>booked</small>
+          </div>
+        </div>
+        <ul class="donut-legend">
+          <li><i class="legend-dot is-amber"></i>Booked <strong>2,912</strong></li>
+          <li><i class="legend-dot is-paper"></i>Available <strong>672</strong></li>
+          <li><i class="legend-dot is-red"></i>Blocked <strong>148</strong></li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <!-- Bookings + departures -->
+  <section class="dash-row dash-row-wide">
+    <article class="panel-card">
+      <header class="panel-card-head">
+        <div>
+          <h3 class="panel-card-title">Recent bookings</h3>
+          <p class="panel-card-sub">Latest tickets from GetAllBusBookings</p>
+        </div>
+        <a class="small fw-semibold" href="/bookings">View all</a>
+      </header>
+      <div class="panel-card-body px-0 pb-0">
+        <div class="table-responsive">
+          <table class="table data-table">
+            <thead>
+              <tr>
+                <th>Booking</th>
+                <th>Passenger</th>
+                <th>Route</th>
+                <th>Travel date</th>
+                <th class="text-end">Seats</th>
+                <th class="text-end">Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mono">#BK-10482</td>
+                <td><div class="person"><span class="avatar avatar-sm avatar-amber">RS</span>Rahul Sharma</div></td>
+                <td>Pune &rarr; Mumbai</td>
+                <td>07 Oct, 06:30</td>
+                <td class="text-end">2</td>
+                <td class="text-end">&#8377;1,140</td>
+                <td><span class="status-pill status-confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td class="mono">#BK-10481</td>
+                <td><div class="person"><span class="avatar avatar-sm avatar-teal">AP</span>Ananya Patel</div></td>
+                <td>Bengaluru &rarr; Chennai</td>
+                <td>07 Oct, 22:15</td>
+                <td class="text-end">1</td>
+                <td class="text-end">&#8377;890</td>
+                <td><span class="status-pill status-pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="mono">#BK-10480</td>
+                <td><div class="person"><span class="avatar avatar-sm avatar-blue">VK</span>Vikram Kumar</div></td>
+                <td>Delhi &rarr; Jaipur</td>
+                <td>08 Oct, 07:00</td>
+                <td class="text-end">3</td>
+                <td class="text-end">&#8377;2,250</td>
+                <td><span class="status-pill status-confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td class="mono">#BK-10479</td>
+                <td><div class="person"><span class="avatar avatar-sm avatar-green">SN</span>Sneha Nair</div></td>
+                <td>Kochi &rarr; Bengaluru</td>
+                <td>06 Oct, 21:45</td>
+                <td class="text-end">1</td>
+                <td class="text-end">&#8377;1,320</td>
+                <td><span class="status-pill status-cancelled">Cancelled</span></td>
+              </tr>
+              <tr>
+                <td class="mono">#BK-10478</td>
+                <td><div class="person"><span class="avatar avatar-sm">MR</span>Mohit Rao</div></td>
+                <td>Hyderabad &rarr; Vijayawada</td>
+                <td>09 Oct, 05:50</td>
+                <td class="text-end">4</td>
+                <td class="text-end">&#8377;2,760</td>
+                <td><span class="status-pill status-confirmed">Confirmed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </article>
+
+    <article class="panel-card">
+      <header class="panel-card-head">
+        <div>
+          <h3 class="panel-card-title">Upcoming departures</h3>
+          <p class="panel-card-sub">Next scheduled trips</p>
+        </div>
+        <a class="small fw-semibold" href="/schedules">Schedules</a>
+      </header>
+      <div class="panel-card-body">
+        <ul class="trips">
+          <li class="trip">
+            <div class="trip-time"><strong>15:30</strong><small>Today</small></div>
+            <div class="trip-info">
+              <strong>Pune &rarr; Mumbai</strong>
+              <small>Neeta Travels &middot; Volvo AC Sleeper</small>
+            </div>
+            <span class="status-pill status-boarding">Boarding</span>
+          </li>
+          <li class="trip">
+            <div class="trip-time"><strong>17:00</strong><small>Today</small></div>
+            <div class="trip-info">
+              <strong>Bengaluru &rarr; Mysuru</strong>
+              <small>KSRTC Airavat &middot; 6 seats left</small>
+            </div>
+            <span class="status-pill status-scheduled">Scheduled</span>
+          </li>
+          <li class="trip">
+            <div class="trip-time"><strong>19:45</strong><small>Today</small></div>
+            <div class="trip-info">
+              <strong>Delhi &rarr; Chandigarh</strong>
+              <small>IntrCity SmartBus &middot; 14 seats left</small>
+            </div>
+            <span class="status-pill status-scheduled">Scheduled</span>
+          </li>
+          <li class="trip">
+            <div class="trip-time"><strong>21:15</strong><small>Today</small></div>
+            <div class="trip-info">
+              <strong>Chennai &rarr; Madurai</strong>
+              <small>SRS Travels &middot; 2 seats left</small>
+            </div>
+            <span class="status-pill status-scheduled">Scheduled</span>
+          </li>
+          <li class="trip">
+            <div class="trip-time"><strong>13:10</strong><small>Today</small></div>
+            <div class="trip-info">
+              <strong>Hyderabad &rarr; Warangal</strong>
+              <small>Orange Travels &middot; Departed</small>
+            </div>
+            <span class="status-pill status-departed">Departed</span>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <!-- Routes, vendors, actions -->
+  <section class="dash-row dash-row-thirds">
+    <article class="panel-card">
+      <header class="panel-card-head">
+        <div>
+          <h3 class="panel-card-title">Top routes</h3>
+          <p class="panel-card-sub">By bookings, last 7 days</p>
+        </div>
+      </header>
+      <div class="panel-card-body">
+        <ol class="ranks">
+          <li>
+            <div class="ranks-row"><span>Pune &rarr; Mumbai</span><strong>312</strong></div>
+            <div class="progress-thin"><span style="width: 100%"></span></div>
+          </li>
+          <li>
+            <div class="ranks-row"><span>Bengaluru &rarr; Chennai</span><strong>264</strong></div>
+            <div class="progress-thin"><span style="width: 85%"></span></div>
+          </li>
+          <li>
+            <div class="ranks-row"><span>Delhi &rarr; Jaipur</span><strong>198</strong></div>
+            <div class="progress-thin is-teal"><span style="width: 63%"></span></div>
+          </li>
+          <li>
+            <div class="ranks-row"><span>Hyderabad &rarr; Vijayawada</span><strong>156</strong></div>
+            <div class="progress-thin is-teal"><span style="width: 50%"></span></div>
+          </li>
+        </ol>
+      </div>
+    </article>
+
+    <article class="panel-card">
+      <header class="panel-card-head">
+        <div>
+          <h3 class="panel-card-title">Bus vendors</h3>
+          <p class="panel-card-sub">Top operators by fleet</p>
+        </div>
+        <a class="small fw-semibold" href="/vendors">Manage</a>
+      </header>
+      <div class="panel-card-body">
+        <ul class="vendors">
+          <li>
+            <span class="avatar avatar-square avatar-amber">NT</span>
+            <div><strong>Neeta Travels</strong><small>neeta&#64;operators.in</small></div>
+            <span class="vendors-count">42 buses</span>
+          </li>
+          <li>
+            <span class="avatar avatar-square avatar-teal">SR</span>
+            <div><strong>SRS Travels</strong><small>ops&#64;srstravels.in</small></div>
+            <span class="vendors-count">36 buses</span>
+          </li>
+          <li>
+            <span class="avatar avatar-square avatar-blue">IC</span>
+            <div><strong>IntrCity SmartBus</strong><small>fleet&#64;intrcity.in</small></div>
+            <span class="vendors-count">29 buses</span>
+          </li>
+          <li>
+            <span class="avatar avatar-square avatar-green">OT</span>
+            <div><strong>Orange Travels</strong><small>hello&#64;orange.in</small></div>
+            <span class="vendors-count">21 buses</span>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="panel-card">
+      <header class="panel-card-head">
+        <div>
+          <h3 class="panel-card-title">Quick actions</h3>
+          <p class="panel-card-sub">Common admin tasks</p>
+        </div>
+      </header>
+      <div class="panel-card-body">
+        <div class="actions">
+          <button class="action" type="button">
+            <span class="stat-card-icon is-ink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14" /><path d="M9 21v-6h6v6" /></svg>
+            </span>
+            Add vendor
+          </button>
+          <button class="action" type="button">
+            <span class="stat-card-icon is-red">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" /><circle cx="12" cy="10" r="3" /></svg>
+            </span>
+            Add location
+          </button>
+          <button class="action" type="button">
+            <span class="stat-card-icon is-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
+            </span>
+            Create schedule
+          </button>
+          <button class="action" type="button">
+            <span class="stat-card-icon is-teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M19 8v6M22 11h-6" /></svg>
+            </span>
+            Add user
+          </button>
+        </div>
+      </div>
+    </article>
+  </section>
+</div>

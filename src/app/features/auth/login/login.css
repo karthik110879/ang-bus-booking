@@ -1,0 +1,104 @@
+:host {
+  display: block;
+}
+
+.brand {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 80% at 0% 0%, rgba(240, 150, 28, 0.14), transparent 55%),
+    radial-gradient(90% 70% at 100% 100%, rgba(25, 163, 156, 0.12), transparent 60%),
+    var(--ink-950);
+}
+
+.routes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.route {
+  position: absolute;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
+}
+
+.route-a { width: 720px; height: 720px; right: -360px; top: -200px; }
+.route-b { width: 480px; height: 480px; right: -180px; top: 40px; border-color: rgba(240, 150, 28, 0.22); }
+.route-c { width: 260px; height: 260px; right: -40px; top: 160px; border-color: rgba(25, 163, 156, 0.22); }
+
+.brand-layer {
+  position: relative;
+}
+
+.wordmark-mark {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: var(--color-brand);
+  color: var(--color-brand-contrast);
+}
+
+.wordmark-mark svg {
+  width: 22px;
+  height: 22px;
+}
+
+.brand-body {
+  max-width: 520px;
+}
+
+.brand-title {
+  font-size: clamp(var(--text-4xl), 3.6vw, var(--text-6xl));
+  font-weight: var(--weight-regular);
+}
+
+.brand-title em {
+  color: var(--amber-300);
+}
+
+.brand-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5) var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border-inverse);
+}
+
+.brand-dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  margin-top: 6px;
+  border-radius: var(--radius-full);
+  background: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(25, 163, 156, 0.18);
+}
+
+.brand-sep {
+  width: 3px;
+  height: 3px;
+  border-radius: var(--radius-full);
+  background: currentColor;
+}
+
+.panel {
+  max-width: var(--layout-form-max);
+  animation: rise var(--duration-slower) var(--ease-out) both;
+}
+
+.btn-arrow {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--duration-base) var(--ease-out);
+}
+
+.btn:hover .btn-arrow {
+  transform: translateX(3px);
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: none; }
+}

@@ -1,0 +1,63 @@
+.shell {
+  display: grid;
+  grid-template-columns: var(--layout-sidenav-width) minmax(0, 1fr);
+  grid-template-rows: var(--layout-header-height) 1fr auto;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav content"
+    "sidenav footer";
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--color-bg);
+}
+
+.shell-header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  display: block;
+}
+
+.shell-sidenav {
+  grid-area: sidenav;
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sidenav);
+  display: block;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.shell-main {
+  grid-area: content;
+  min-width: 0;
+  padding: var(--space-8) var(--layout-gutter);
+}
+
+.shell-footer {
+  grid-area: footer;
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .shell {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "header"
+      "content"
+      "footer";
+  }
+
+  .shell-sidenav {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: var(--layout-sidenav-width);
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .shell-main {
+    padding: var(--space-6) var(--space-4);
+  }
+}
